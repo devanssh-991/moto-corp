@@ -42,8 +42,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-
-
   const toggleTheme = () => {
     if (theme === 'dark') {
       setTheme('light')
@@ -142,6 +140,13 @@ export default function Navbar() {
             >
               {open ? <FiX size={18} /> : <FiMenu size={18} />}
             </button>
+
+            <button
+              type="button"
+              className="hidden items-center justify-center rounded-full bg-primary px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-soft transition hover:bg-primary/90 md:flex"
+            >
+              Test Ride
+            </button>
           </div>
         </div>
 
@@ -171,6 +176,13 @@ export default function Navbar() {
                   </NavLink>
                 ))}
 
+                <button
+                  type="button"
+                  className="mt-2 flex items-center justify-center rounded-2xl bg-primary px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950"
+                >
+                  Test Ride
+                </button>
+
                 <Link
                   to="/vehicles"
                   className="mt-2 flex items-center justify-center rounded-2xl bg-primary px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950"
@@ -185,4 +197,3 @@ export default function Navbar() {
     </header>
   )
 }
-
