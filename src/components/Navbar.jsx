@@ -14,19 +14,25 @@ const navItems = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
-  const [theme, setTheme] = useState('dark')
   const location = useLocation()
+  const [prevPath, setPrevPath] = useState(location.pathname)
+
+  if (location.pathname !== prevPath) {
+    setPrevPath(location.pathname)
+    setOpen(false)
+  }
+
+  const [theme, setTheme] = useState(() => {
+    return window.localStorage.getItem('motocorp-theme') === 'light' ? 'light' : 'dark'
+  })
 
   useEffect(() => {
-    const stored = window.localStorage.getItem('motocorp-theme')
-    if (stored === 'light') {
-      setTheme('light')
+    if (theme === 'light') {
       document.documentElement.classList.remove('dark')
     } else {
-      setTheme('dark')
       document.documentElement.classList.add('dark')
     }
-  }, [])
+  }, [theme])
 
   useEffect(() => {
     const onScroll = () => {
@@ -36,9 +42,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  useEffect(() => {
-    setOpen(false)
-  }, [location.pathname])
+
 
   const toggleTheme = () => {
     if (theme === 'dark') {
