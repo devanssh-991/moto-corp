@@ -7,6 +7,7 @@ import ComparePage from '../pages/ComparePage'
 import AboutPage from '../pages/AboutPage'
 import ContactPage from '../pages/ContactPage'
 import Navbar from '../components/Navbar'
+import { Link } from 'react-router-dom'
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -20,7 +21,9 @@ export default function AppRoutes() {
   return (
     <>
       <Navbar>
-        <button>Test Ride</button>
+        <Link to="/contact" className="mt-2 flex items-center justify-center rounded-2xl bg-blue-500 px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950">
+          Test Ride
+        </Link>
       </Navbar>
       <Routes location={location} key={location.pathname}>
         <Route

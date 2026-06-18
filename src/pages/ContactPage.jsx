@@ -1,4 +1,5 @@
 import { bikes, vehicles } from '../data/garageData'
+import { Link } from 'react-router-dom'
 
 export default function ContactPage() {
   return (
@@ -66,4 +67,3 @@ export default function ContactPage() {
     </section>
   )
 }
-
