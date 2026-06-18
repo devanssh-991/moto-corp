@@ -143,7 +143,7 @@ export default function Navbar() {
 
             <Link
               to="/contact"
-              className="hidden items-center justify-center rounded-full bg-blue-500 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-soft transition hover:bg-blue-600 md:flex"
+              className="hidden items-center justify-center rounded-full bg-red-500 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-soft transition hover:bg-red-600 md:flex"
             >
               Test Ride
             </Link>
@@ -178,7 +178,7 @@ export default function Navbar() {
 
                 <Link
                   to="/contact"
-                  className="mt-2 flex items-center justify-center rounded-2xl bg-blue-500 px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950"
+                  className="mt-2 flex items-center justify-center rounded-2xl bg-red-500 px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950"
                 >
                   Test Ride
                 </Link>
