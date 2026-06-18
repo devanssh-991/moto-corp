@@ -143,7 +143,7 @@ export default function Navbar() {
 
             <button
               type="button"
-              className="hidden items-center justify-center rounded-full bg-primary px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-soft transition hover:bg-primary/90 md:flex"
+              className="hidden items-center justify-center rounded-full bg-blue-500 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-soft transition hover:bg-blue-600 md:flex"
             >
               Test Ride
             </button>
@@ -178,7 +178,7 @@ export default function Navbar() {
 
                 <button
                   type="button"
-                  className="mt-2 flex items-center justify-center rounded-2xl bg-primary px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950"
+                  className="mt-2 flex items-center justify-center rounded-2xl bg-blue-500 px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950"
                 >
                   Test Ride
                 </button>

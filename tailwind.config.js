@@ -20,6 +20,9 @@ export default {
           DEFAULT: 'rgba(15,23,42,0.85)',
           light: 'rgba(15,23,42,0.6)',
         },
+        blue: {
+          DEFAULT: '#0000ff',
+        },
       },
       backgroundImage: {
         'radial-glow':
@@ -33,4 +36,3 @@ export default {
   },
   plugins: [],
 }
-

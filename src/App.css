@@ -182,3 +182,8 @@
     border-right-color: var(--border);
   }
 }
+
+.test-ride-button {
+  background-color: blue;
+  color: white;
+}
