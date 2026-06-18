@@ -127,7 +127,7 @@ export default function Navbar() {
 
             <Link
               to="/vehicles"
-              className="hidden items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-soft transition hover:bg-primary/90 sm:flex"
+              className="hidden items-center gap-2 rounded-full bg-red-500 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-soft transition hover:bg-red-600 sm:flex"
             >
               Explore Fleet
             </Link>
@@ -185,9 +185,9 @@ export default function Navbar() {
 
                 <Link
                   to="/vehicles"
-                  className="mt-2 flex items-center justify-center rounded-2xl bg-primary px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950"
+                  className="mt-2 flex items-center justify-center rounded-2xl bg-red-500 px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950"
                 >
-                  Book a Test Drive
+                  Explore Fleet
                 </Link>
               </div>
             </motion.div>
