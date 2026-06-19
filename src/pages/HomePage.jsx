@@ -36,7 +36,11 @@ export default function HomePage() {
         <article className="rounded-3xl border border-slate-300 bg-white/90 p-6 shadow-glass dark:border-slate-800/70 dark:bg-slate-900/70">
           <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50">Featured Bikes</h2>
           <div className="mt-4 space-y-3">
-            {bikes.slice(0, 3).map((item) => (
+            {[
+              ...bikes.slice(0, 2),
+              { id: 'b9', name: 'Shvansh 789', type: 'Bike', power: '1000hp', range: '1000kms', price: 320000 },
+              ...bikes.slice(2, 3),
+            ].map((item) => (
               <div key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-950/70">
                 <p className="text-sm font-medium text-slate-900 dark:text-slate-100">{item.name}</p>
                 <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">
@@ -51,4 +55,3 @@ export default function HomePage() {
     </section>
   )
 }
-
