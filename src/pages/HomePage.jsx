@@ -22,7 +22,8 @@ export default function HomePage() {
           <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50">Featured Vehicles</h2>
           <div className="mt-4 space-y-3">
             {[...vehicles.slice(0, 3), 
-              { id: 'v11', name: 'Shvansh 789', type: 'Bike', power: '1000hp', range: '1000kms', price: 320000 }
+              { id: 'v11', name: 'Shvansh 789', type: 'Bike', power: '1000hp', range: '1000kms', price: 320000 },
+              { id: 'v12', name: 'John Doe 789', type: 'Car', power: '102hp', range: '1000kms', price: 31311 }
             ].map((item) => (
               <div key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-950/70">
                 <p className="text-sm font-medium text-slate-900 dark:text-slate-100">{item.name}</p>
