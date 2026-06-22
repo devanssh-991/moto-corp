@@ -21,7 +21,7 @@ export default function VehiclesPage() {
         <div>
           <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Cars and SUVs</h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {vehicles.map((item) => (
+            {vehicles.filter(item => item.name !== 'Devansh 123').map((item) => (
               <article key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-950/70">
                 <p className="text-sm font-medium text-slate-900 dark:text-slate-100">{item.name}</p>
                 <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">{item.type}</p>
@@ -53,4 +53,3 @@ export default function VehiclesPage() {
     </section>
   )
 }
-

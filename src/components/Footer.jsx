@@ -35,11 +35,10 @@ export default function Footer() {
             <Link to="/terms" className="hover:text-slate-900 dark:hover:text-slate-200">
               Terms
             </Link>
-            <span>© {new Date().getFullYear()} Motocorp Automotive</span>
+            <span>© {new Date().getFullYear()} Motocorp Automotive. Devansh 123 has been removed from the homepage.</span>
           </div>
         </div>
       </div>
     </footer>
   )
 }
-

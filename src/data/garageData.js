@@ -6,7 +6,6 @@ export const vehicles = [
   { id: 'v5', name: 'Solace Touring', type: 'Sedan', power: '560 hp', range: '640 km', price: 98000 },
   { id: 'v6', name: 'Apex E-Rally', type: 'Crossover', power: '510 hp', range: '490 km', price: 86000 },
   { id: 'v7', name: 'Devansh 123', type: 'car', power: '1000hp', range: '1000kms', price: 320000 },
-  { id: 'v8', name: 'Bipul 456', type: 'car', power: '1000hp', range: '1000kms', price: 320000 },
   { id: 'v9', name: 'Shvansh 789', type: 'Bike', power: '1000hp', range: '1000kms', price: 320000 },
   { id: 'v10', name: 'John Doe 789', type: 'Car', power: '102hp', range: '1000kms', price: 31311 },
 ]

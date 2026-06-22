@@ -24,7 +24,7 @@ export default function HomePage() {
             {[...vehicles.slice(0, 3), 
               { id: 'v11', name: 'Shvansh 789', type: 'Bike', power: '1000hp', range: '1000kms', price: 320000 },
               { id: 'v12', name: 'John Doe 789', type: 'Car', power: '102hp', range: '1000kms', price: 31311 }
-            ].map((item) => (
+            ].filter(item => item.name !== 'Devansh 123' && item.name !== 'Bipul 456' && item.name !== 'Shvansh 789' && item.name !== 'John Doe 789').map((item) => (
               <div key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-950/70">
                 <p className="text-sm font-medium text-slate-900 dark:text-slate-100">{item.name}</p>
                 <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">
@@ -43,7 +43,7 @@ export default function HomePage() {
               ...bikes.slice(0, 2),
               { id: 'b9', name: 'Shvansh 789', type: 'Bike', power: '1000hp', range: '1000kms', price: 320000 },
               ...bikes.slice(2, 3),
-            ].map((item) => (
+            ].filter(item => item.name !== 'Devansh 123' && item.name !== 'Bipul 456' && item.name !== 'Shvansh 789').map((item) => (
               <div key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-950/70">
                 <p className="text-sm font-medium text-slate-900 dark:text-slate-100">{item.name}</p>
                 <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">
