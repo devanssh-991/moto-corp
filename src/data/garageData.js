@@ -11,7 +11,7 @@ export const vehicles = [
 ]
 
 export const bikes = [
-  { id: 'b1', name: 'Volt RS', type: 'Sport Bike', power: '168 hp', range: '280 km', price: 36000 },
+  { id: 'b1', name: 'VOLT BS', type: 'Sport Bike', power: '168 hp', range: '280 km', price: 36000 },
   { id: 'b2', name: 'Raven Street', type: 'Naked Bike', power: '122 hp', range: '240 km', price: 24000 },
   { id: 'b3', name: 'Arc Comet', type: 'Touring Bike', power: '140 hp', range: '320 km', price: 28500 },
   { id: 'b4', name: 'Pulse Trail', type: 'Adventure Bike', power: '108 hp', range: '300 km', price: 22500 },
