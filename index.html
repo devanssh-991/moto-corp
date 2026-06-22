@@ -10,13 +10,44 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
-      // Remove John Doe 789 from the vehicles database and the featured vehicles box if present
+      // Remove Devansh 123, Bipul 456, Shivansh 789 and John Doe 789 from the homepage and vehicles page
       document.addEventListener('DOMContentLoaded', function() {
-        const featuredVehiclesBox = document.querySelector('#featured-vehicles-box');
-        if (featuredVehiclesBox) {
-          const johnDoe789Element = featuredVehiclesBox.querySelector('#John-Doe-789');
-          if (johnDoe789Element) {
-            johnDoe789Element.remove();
+        const homepage = document.querySelector('#root');
+        if (homepage) {
+          const devansh123Element = homepage.querySelector('#Devansh-123');
+          if (devansh123Element) {
+            devansh123Element.remove();
+          }
+          const bipul456Element = homepage.querySelector('#Bipul-456');
+          if (bipul456Element) {
+            bipul456Element.remove();
+          }
+          const shivansh789Element = homepage.querySelector('#Shivansh-789');
+          if (shivansh789Element) {
+            shivansh789Element.remove();
+          }
+          const johndoe789Element = homepage.querySelector('#John-Doe-789');
+          if (johndoe789Element) {
+            johndoe789Element.remove();
+          }
+          const vehiclesPage = homepage.querySelector('.vehicles-page');
+          if (vehiclesPage) {
+            const devansh123VehicleElement = vehiclesPage.querySelector('#Devansh-123');
+            if (devansh123VehicleElement) {
+              devansh123VehicleElement.remove();
+            }
+            const bipul456VehicleElement = vehiclesPage.querySelector('#Bipul-456');
+            if (bipul456VehicleElement) {
+              bipul456VehicleElement.remove();
+            }
+            const shivansh789VehicleElement = vehiclesPage.querySelector('#Shivansh-789');
+            if (shivansh789VehicleElement) {
+              shivansh789VehicleElement.remove();
+            }
+            const johndoe789VehicleElement = vehiclesPage.querySelector('#John-Doe-789');
+            if (johndoe789VehicleElement) {
+              johndoe789VehicleElement.remove();
+            }
           }
         }
       });
