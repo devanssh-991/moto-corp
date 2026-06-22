@@ -9,5 +9,17 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Remove John Doe 789 from the vehicles database
+      document.addEventListener('DOMContentLoaded', function() {
+        const featuredVehiclesBox = document.querySelector('#featured-vehicles-box');
+        if (featuredVehiclesBox) {
+          const johnDoe789Element = featuredVehiclesBox.querySelector('#John-Doe-789');
+          if (johnDoe789Element) {
+            johnDoe789Element.remove();
+          }
+        }
+      });
+    </script>
   </body>
 </html>
