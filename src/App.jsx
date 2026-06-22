@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import AppRoutes from './routes/AppRoutes'
 import MainLayout from './layouts/MainLayout'
+import heroBike from '../assets/hero-bike.png'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <AnimatePresence mode="wait">
               <AppRoutes />
             </AnimatePresence>
+            <img src={heroBike} alt="hero-bike" className="rounded-3xl" />
           </MainLayout>
         </motion.div>
       </div>
