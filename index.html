@@ -10,25 +10,13 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
-      // Remove Devansh 123, Bipul 456, Shivansh 789, and John Doe 789 from the vehicles database
+      // Remove John Doe 789 from the vehicles database and the featured vehicles box if present
       document.addEventListener('DOMContentLoaded', function() {
         const featuredVehiclesBox = document.querySelector('#featured-vehicles-box');
         if (featuredVehiclesBox) {
-          const devansh123Element = featuredVehiclesBox.querySelector('#Devansh-123');
-          if (devansh123Element) {
-            devansh123Element.remove();
-          }
-          const bipul456Element = featuredVehiclesBox.querySelector('#Bipul-456');
-          if (bipul456Element) {
-            bipul456Element.remove();
-          }
-          const shivansh789Element = featuredVehiclesBox.querySelector('#Shivansh-789');
-          if (shivansh789Element) {
-            shivansh789Element.remove();
-          }
-          const johndoe789Element = featuredVehiclesBox.querySelector('#John-Doe-789');
-          if (johndoe789Element) {
-            johndoe789Element.remove();
+          const johnDoe789Element = featuredVehiclesBox.querySelector('#John-Doe-789');
+          if (johnDoe789Element) {
+            johnDoe789Element.remove();
           }
         }
       });
