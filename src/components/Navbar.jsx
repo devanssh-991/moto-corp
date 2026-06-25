@@ -127,72 +127,12 @@ export default function Navbar() {
 
             <Link
               to="/vehicles"
-              className="hidden items-center gap-2 rounded-full bg-red-500 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-soft transition hover:bg-red-600 sm:flex"
+              className="hidden items-center gap-2 rounded-full bg-green-500 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-soft transition explore-fleet-button"
             >
               Explore Fleet
             </Link>
-
-            <button
-              type="button"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 bg-white/70 text-slate-700 dark:border-slate-600/70 dark:bg-slate-900/60 dark:text-slate-200 md:hidden"
-              onClick={() => setOpen((prev) => !prev)}
-              aria-label="Toggle navigation"
-            >
-              {open ? <FiX size={18} /> : <FiMenu size={18} />}
-            </button>
-
-            <Link
-              to="/contact"
-              className="hidden items-center justify-center rounded-full bg-red-500 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-soft transition hover:bg-red-600 md:flex"
-            >
-              Test Ride
-            </Link>
           </div>
         </div>
-
-        <AnimatePresence>
-          {open && (
-            <motion.div
-              initial={{ opacity: 0, y: -6 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -6 }}
-              transition={{ duration: 0.2 }}
-              className="mt-2 overflow-hidden rounded-3xl border border-slate-300 bg-white/90 px-3 py-3 text-sm text-slate-800 shadow-glass backdrop-blur-xl dark:border-slate-700/60 dark:bg-slate-900/90 dark:text-slate-200 md:hidden"
-            >
-              <div className="flex flex-col gap-1">
-                {navItems.map((item) => (
-                  <NavLink
-                    key={item.to}
-                    to={item.to}
-                    className={({ isActive }) =>
-                      `rounded-2xl px-3 py-2 transition-colors ${
-                        isActive
-                          ? 'bg-slate-200 text-primary dark:bg-slate-800/80'
-                          : 'text-slate-700 hover:bg-slate-200 dark:text-slate-200 dark:hover:bg-slate-800/60'
-                      }`
-                    }
-                  >
-                    {item.label}
-                  </NavLink>
-                ))}
-
-                <Link
-                  to="/contact"
-                  className="mt-2 flex items-center justify-center rounded-2xl bg-red-500 px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950"
-                >
-                  Test Ride
-                </Link>
-
-                <Link
-                  to="/vehicles"
-                  className="mt-2 flex items-center justify-center rounded-2xl bg-red-500 px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-950"
-                >
-                  Explore Fleet
-                </Link>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
       </motion.nav>
     </header>
   )
